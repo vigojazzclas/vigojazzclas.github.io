@@ -49,7 +49,7 @@
 		</div>
 		<script type="text/javascript">
 			var main=document.getElementById("main");
-			var xhr=XMLHttpRequest();
+			var xhr=new XMLHttpRequest();
 			xhr.onload=function(){
 				response=xhr.response;
 				main.innerHTML=response;
