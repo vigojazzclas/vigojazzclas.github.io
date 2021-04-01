@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contacto - VigoJazzClas</title>
+		<style>
+			button{
+				cursor:pointer;
+			}
+			.a_btn{
+				text-decoration:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main"></div>
+		<div style="height:100px;"></div>
+		<div>
+			<div style="margin:auto;height:410px;width:910px;">
+				<div style="float:left;width:400px;text-align:center;border: 2px solid #4fffff;">
+					<p>Correo:
+					<a href="javascript:window.open('https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vigojazzclas@gmail.com&su=Información');">vigojazzclas@gmail.com</a>
+					</p>
+					<p>Teléfono 1: +34 680 20 35 87<br>Teléfono 2: +34 616 87 74 47</p>
+					<p>
+						<a class="a_btn" href="javascript:window.open('https://api.whatsapp.com/send?phone=+34680203587');">
+							<img width="30px;" height="30px;" src="https://static.whatsapp.net/rsrc.php/v3/yP/r/rYZqPCBaG70.png">
+						</a> 
+						<a class="a_btn" href="javascript:window.open('https://www.instagram.com/vigojazzclas');">
+							<img width="30px;" height="30px;" src="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico">
+						</a> 
+						<a class="a_btn" href="javascript:window.open('https://es-es.facebook.com/vigojazzclas');">
+							<img width="30px;" height="30px;" src="https://www.facebook.com/images/fb_icon_325x325.png">
+						</a>
+					</p>
+				</div>
+				<div style="float:right;width:450px;height:400px;overflow-y:auto;overflow-x:auto;">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1477.066527630093!2d-8.720483292913448!3d42.232970315769876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f634716235af1%3A0x6495a04ef9923c99!2sMonfortino%20Gastro%20Piano%20Bar!5e0!3m2!1ses!2ses!4v1616942705776!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+			<div style="height:100px;"></div>
+			<div style="text-align:center;">
+				<div style="margin:auto;width:800px;border:1px solid black;"></div>
+				<h2>Formulario de contacto</h2>
+				<div style="margin:auto;width:800px;border:1px solid black;"></div>
+				<div style="height:60px;"></div>
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeeugUaGSjF4MDdAJXIyZ5yHsOvuVXYOSEcRNu6_1TtxmwIkA/viewform?embedded=true" width="640" height="1046" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var main=document.getElementById("main");
+			var xhr=XMLHttpRequest();
+			xhr.onload=function(){
+				response=xhr.response;
+				main.innerHTML=response;
+				var name=document.getElementById("name");
+				name.innerHTML="Contacto";
+			}M
+			xhr.open("GET","https://vigojazzclas.github.io/head.txt",true);
+			xhr.send();
+		</script>
+	</body>
+</html>
