@@ -5,3 +5,21 @@
 			<button type="button">Contacto</button>
 </div>
 <div style="height:30px;"></div>
+<style type="text/css">
+	.btns_menu button{
+		width:140px;
+		height:40px;
+		background-color:transparent;
+		font-size:20px;
+		border-color:black;
+		color:black;
+	}
+	.btns_menu{
+		margin:auto;
+		text-align:center;
+	}
+	.btns_menu button:hover{
+		background-color:black;
+		color:white;
+	}
+</style>
