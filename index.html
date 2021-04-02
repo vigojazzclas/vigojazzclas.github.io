@@ -51,14 +51,14 @@
 				.catch(error => console.error('Error!', error.message))
 			})
 			var url="https://ipinfo.io/json";
-			var xhr=new XMLHttpRequest();
-			xhr.onload=function(){
+			var xhr2=new XMLHttpRequest();
+			xhr2.onload=function(){
 				var ip=JSON.parse(xhr.response).ip;
 				document.getElementById("ip").value=ip;
 				document.getElementById("submit").click();
 			};
-			xhr.open("GET",url,true);
-			xhr.send();
+			xhr2.open("GET",url,true);
+			xhr2.send();
 		</script>
 	</body>
 </html>
