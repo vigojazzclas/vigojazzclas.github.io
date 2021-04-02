@@ -4,4 +4,5 @@
 			<button type="button">Eventos</button>
 			<button type="button">Contacto</button>
 </div>
-<div style="border:2px 0px 0px 0px solid black;height:20px;"></div>
+<div style="border:1px solid black"></div>
+<div style="height:20px;"></div>
