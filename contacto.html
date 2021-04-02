@@ -10,6 +10,22 @@
 			.a_btn{
 				text-decoration:none;
 			}
+			.btns_menu{
+				margin:auto;
+				text-align:center;
+			}
+			.btns_menu button{
+				width:140px;
+				height:40px;
+				background-color:transparent;
+				font-size:20px;
+				border-color:black;
+				color:black;
+			}
+			.btns_menu button:hover{
+				background-color:black;
+				color:white;
+			}
 		</style>
 	</head>
 	<body>
@@ -27,7 +43,8 @@
 				</div>
 			</div>
 		</div>
-		<div style="height:50px;"></div>
+		<div style="height:10px;"></div>
+		<div id="menu"></div>
 		<div>
 			<div style="margin:auto;height:410px;width:910px;">
 				<div style="float:left;width:400px;text-align:center;border: 2px solid #4fffff;">
@@ -60,5 +77,15 @@
 				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeeugUaGSjF4MDdAJXIyZ5yHsOvuVXYOSEcRNu6_1TtxmwIkA/viewform?embedded=true" width="640" height="1046" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 			</div>
 		</div>
+		<script type="text/javascript">
+			var menu=document.getElementById("menu");
+			var xhr=new XMLHttpRequest();
+			xhr.onload=function(){
+				var response=xhr.response;
+				menu.innerHTML=response;
+			};
+			xhr.open("GET","https://vigojazzclas.github.io/menu.txt",true);
+			xhr.send();
+		</script>
 	</body>
 </html>
