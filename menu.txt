@@ -1,0 +1,6 @@
+<div class="btns_menu">
+			<button type="button">Inicio</button>
+			<button type="button">Noticias</button>
+			<button type="button">Eventos</button>
+			<button type="button">Contacto</button>
+</div>
