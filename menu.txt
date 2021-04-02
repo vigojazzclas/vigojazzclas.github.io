@@ -1,8 +1,9 @@
 <div class="btns_menu">
-			<button type="button">Inicio</button>
-			<button type="button">Noticias</button>
-			<button type="button">Eventos</button>
-			<button type="button">Contacto</button>
+			<button type="button" onclick="document.location.href='https://vigojazzclas.github.io';">Inicio</button>
+			<button type="button" onclick="document.location.href='https://vigojazzclas.github.io/noticias.html';">Noticias</button>
+			<button type="button" onclick="document.location.href='https://vigojazzclas.github.io/eventos.html';">Eventos</button>
+			<button type="button" onclick="document.location.href='https://vigojazzclas.github.io/galeria.html';">Galería</button>
+			<button type="button" onclick="document.location.href='https://vigojazzclas.github.io/contacto.html';">Contacto</button>
 </div>
 <div style="height:30px;"></div>
 <style type="text/css">
