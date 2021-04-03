@@ -53,7 +53,7 @@
 			var url="https://ipinfo.io/json";
 			var xhr2=new XMLHttpRequest();
 			xhr2.onload=function(){
-				var ip=JSON.parse(xhr.response).ip;
+				var ip=JSON.parse(xhr2.response).ip;
 				document.getElementById("ip").value=ip;
 				document.getElementById("submit").click();
 			};
