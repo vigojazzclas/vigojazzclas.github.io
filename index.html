@@ -42,14 +42,14 @@
 			};
 			xhr.open("GET","https://vigojazzclas.github.io/menu.txt",true);
 			xhr.send();
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbyedQ63DcOvbOADBcFquQNYbx1YMHvxw37Vg9n9lLTXNzbBB108/exec'
-			const form = document.forms['submit-form']
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbyedQ63DcOvbOADBcFquQNYbx1YMHvxw37Vg9n9lLTXNzbBB108/exec';
+			const form = document.forms['submit-form'];
 			form.addEventListener('submit', e => {
 				e.preventDefault()
 				fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 				.then(response => console.log('Success!', response))
 				.catch(error => console.error('Error!', error.message))
-			})
+			});
 			var url="https://ipinfo.io/json";
 			var xhr2=new XMLHttpRequest();
 			xhr2.onload=function(){
