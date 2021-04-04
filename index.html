@@ -27,12 +27,10 @@
 				</div>
 			</div>
 		</div>
-		<form name="submit-form">
-			<input name="ip" id="ip" hidden>
-			<button type="submit" id="submit" hidden></button>
-		</form>
 		<div style="height:10px;"></div>
 		<div id="menu"></div>
+		<div id="sfcc63tf2qn5fcrzeqhldcplk26n1s3qe3w" hidden></div>
+		<script type="text/javascript" src="https://counter4.stat.ovh/private/counter.js?c=c63tf2qn5fcrzeqhldcplk26n1s3qe3w&down=async" async></script>
 		<script type="text/javascript">
 			var menu=document.getElementById("menu");
 			var xhr=new XMLHttpRequest();
@@ -42,23 +40,6 @@
 			};
 			xhr.open("GET","https://vigojazzclas.github.io/menu.txt",true);
 			xhr.send();
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbyedQ63DcOvbOADBcFquQNYbx1YMHvxw37Vg9n9lLTXNzbBB108/exec';
-			const form = document.forms['submit-form'];
-			form.addEventListener('submit', e => {
-				e.preventDefault()
-				fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => console.log('Success!', response))
-				.catch(error => console.error('Error!', error.message))
-			});
-			var url="https://ipinfo.io/json";
-			var xhr2=new XMLHttpRequest();
-			xhr2.onload=function(){
-				var ip=JSON.parse(xhr2.response).ip;
-				document.getElementById("ip").value=ip;
-				document.getElementById("submit").click();
-			};
-			xhr2.open("GET",url,true);
-			xhr2.send();
 		</script>
 	</body>
 </html>
